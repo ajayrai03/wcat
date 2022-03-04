@@ -7,10 +7,17 @@
 // let b=5;
 // console.log(b);
 
+// {
+//     var a=10;
+//     let b=20;
+//     console.log(a);
+//     console.log(b);
+// }
+// console.log(a);
+var randomvalue=21;
+function greet()
 {
-    var a=10;
-    let b=20;
-    console.log(a);
-    console.log(b);
+console.log(typeof randomvalue);
+var randomvalue="hello";
 }
-console.log(a);
+greet();
