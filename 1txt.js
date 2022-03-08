@@ -14,10 +14,14 @@
 //     console.log(b);
 // }
 // console.log(a);
-var randomvalue=21;
-function greet()
-{
-console.log(typeof randomvalue);
-var randomvalue="hello";
-}
-greet();
+// var randomvalue=21;
+// function greet()
+// {
+// console.log(typeof randomvalue);
+// var randomvalue="hello";
+// }
+// greet();
+//------> split property
+var str="lorem34 jjwejwiweieiwjiewieiwii weiwwewewllllllllllllllllllllllllllllllllllllllllllll";
+
+console.log(str.split("\n"));
