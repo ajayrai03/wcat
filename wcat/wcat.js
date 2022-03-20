@@ -34,6 +34,7 @@ for(let i=0;i<filesArr.length;i++)
 console.log(content);
 let contentArray=content.split("\r\n");
 //console.table(contentArray);
+
 //check if -s is present or not
 let tempArr=[];
 let isSPresent=optionsArr.includes("-s");
@@ -49,7 +50,8 @@ if(isSPresent)
             contentArray[i] = null;
         }
     }
-   // console.table(contentArray);
+    console.table(contentArray);
+     //push everything in tempArr except null
 
 for(let i=0;i<contentArray.length;i++)
 {
@@ -59,8 +61,9 @@ for(let i=0;i<contentArray.length;i++)
     }
 }
 //console.log("data after removing extra lines\n",tempArr);
+contentArr = tempArr;
 }
-contentArray=tempArr;
+
 let indexOfN=optionsArr.indexOf("-n");
 let indexOfB=optionsArr.indexOf("-b");
 // if -n and -b is not found, -1 is returned
